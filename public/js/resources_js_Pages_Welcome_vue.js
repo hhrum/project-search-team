@@ -111,7 +111,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    Hello, world\n")])
+  return _c("div", [_vm._v("\n    Я тебя выебал\n")])
 }
 var staticRenderFns = []
 render._withStripped = true

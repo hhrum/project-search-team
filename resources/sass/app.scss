@@ -1,0 +1,68 @@
+// Переменные
+$main-p: 24px;
+$head-h: 85px;
+$nav-h: 60px;
+
+$main-bg: #141523;
+$content-bg: #282B3E;
+$main-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+$fw: 600;
+$fz: 16px;
+$text-color: #fff;
+$active-color: #6476CC;
+
+
+// Миксины
+@mixin flexing ($jc: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+
+@mixin pos-fixed ($t, $b, $h) {
+    position:fixed;
+    top:$t;
+    bottom: $b;
+    left:0;
+    right:0;
+    height: $h;
+}
+
+@mixin pseudo ($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin avatar($wh, $mr: 0) {
+    width: $wh;
+    height: $wh;
+    margin-right: $mr;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: $fw;
+    font-size: $fz;
+    color: $text-color;
+
+    background: $main-bg;
+}
+
+.content {
+    margin: 24px 24px;
+}
+
+.icon {
+    fill: #fff;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+    &--purple {
+        fill: #7B61FF;
+    }
+    &--red {
+        fill: #E64646;
+    }
+}

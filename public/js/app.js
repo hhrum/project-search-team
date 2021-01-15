@@ -1879,17 +1879,20 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue */ "./node_modules/@inertiajs/inertia-vue/dist/index.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var _inertiajs_progress__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/progress */ "./node_modules/@inertiajs/progress/dist/index.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var svg_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svg-vue */ "./node_modules/svg-vue/dist/svg-vue.esm.js");
+/* harmony import */ var _inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/progress */ "./node_modules/@inertiajs/progress/dist/index.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_2__.default.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.plugin);
-_inertiajs_progress__WEBPACK_IMPORTED_MODULE_1__.InertiaProgress.init();
+
+vue__WEBPACK_IMPORTED_MODULE_3__.default.use(svg_vue__WEBPACK_IMPORTED_MODULE_1__.default);
+vue__WEBPACK_IMPORTED_MODULE_3__.default.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.plugin);
+_inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__.InertiaProgress.init();
 var el = document.getElementById('app');
-new vue__WEBPACK_IMPORTED_MODULE_2__.default({
+new vue__WEBPACK_IMPORTED_MODULE_3__.default({
   render: function render(h) {
     return h(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.App, {
       props: {
@@ -19245,10 +19248,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20809,6 +20812,157 @@ module.exports = {
     maybeMap: maybeMap,
     merge: merge
 };
+
+
+/***/ }),
+
+/***/ "./resources/svg/bell-icon.svg":
+/*!*************************************!*\
+  !*** ./resources/svg/bell-icon.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 22 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.71.5c4.531 0 7.995 3.794 7.995 8.581l-.004 1.827c0 .307.199.663.738 1.297.067.08.131.153.27.315 1.07 1.238 1.496 1.955 1.496 3.068 0 .501-.057.89-.294 1.358-.506.995-1.588 1.554-3.206 1.554h-2.6c-.669 2.265-2.187 3.5-4.4 3.5-2.212 0-3.73-1.235-4.399-3.5h-2.6c-1.666 0-2.759-.574-3.243-1.604-.21-.446-.258-.809-.258-1.308 0-1.113.425-1.83 1.493-3.068.14-.16.203-.235.27-.314.539-.635.737-.99.737-1.299V9.08C2.705 4.296 6.177.5 10.71.5zm2.275 18h-4.56c.452 1.043 1.179 1.5 2.28 1.5 1.102 0 1.829-.457 2.28-1.5zm-2.275-16c-3.386 0-6.005 2.862-6.005 6.579v1.828c0 .928-.384 1.617-1.211 2.592l-.282.328c-.76.88-1.007 1.298-1.007 1.761 0 .226.016.347.068.457.124.264.488.455 1.432.455h14c.915 0 1.287-.192 1.423-.46.06-.117.077-.241.077-.452 0-.463-.247-.88-1.009-1.76l-.281-.328c-.83-.976-1.214-1.665-1.214-2.593l.004-1.828c0-3.719-2.611-6.579-5.995-6.579z\" fill=\"#fff\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/close-icon.svg":
+/*!**************************************!*\
+  !*** ./resources/svg/close-icon.svg ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 17 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M.998.293a1 1 0 011.414 0l6.293 6.292L14.998.293a1 1 0 011.32-.083l.094.083a1 1 0 010 1.414L10.12 8l6.292 6.293a1 1 0 01.084 1.32l-.084.094a1 1 0 01-1.414 0L8.705 9.415l-6.293 6.292a1 1 0 01-1.32.083l-.094-.083a1 1 0 010-1.414L7.29 8 .998 1.707A1 1 0 01.915.387L.998.293z\" fill=\"#fff\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/gamepad-icon-gradient.svg":
+/*!*************************************************!*\
+  !*** ./resources/svg/gamepad-icon-gradient.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 27 18\" xmlns=\"http://www.w3.org/2000/svg\"><linearGradient id=\"a\" gradientTransform=\"rotate(10)\"><stop offset=\"0%\" stop-color=\"#7B61FF\"/><stop offset=\"100%\" stop-color=\"#E64646\"/></linearGradient><path d=\"M17.705 0c6.372 0 9 4.965 9 11 0 4.481-1.26 7-4 7-1.14 0-1.896-.481-2.758-1.493l-.163-.196c-.092-.113-.452-.569-.542-.68l-.157-.189C18.207 14.411 17.477 14 16.205 14h-5c-1.272 0-2.001.41-2.88 1.442l-.156.189c-.09.111-.45.567-.543.68l-.162.196C6.602 17.519 5.846 18 4.705 18c-2.74 0-4-2.519-4-7 0-6.035 2.629-11 9-11h8zm0 2h-8c-4.922 0-7 3.924-7 9 0 3.519.741 5 2 5 .42 0 .731-.194 1.238-.792l.557-.693.293-.358C8.026 12.707 9.25 12 11.205 12h5c1.956 0 3.18.707 4.413 2.157l.176.212.674.839c.507.598.817.792 1.237.792 1.26 0 2-1.482 2-5 0-5.076-2.077-9-7-9zM9.218 4.5c.19 0 .348.037.478.107s.233.172.302.302c.07.13.107.288.107.479v1.211l1.213.001c.19 0 .348.037.478.107s.233.172.303.302c.07.13.106.288.106.479v.024a.996.996 0 01-.107.479.728.728 0 01-.302.302.997.997 0 01-.478.107l-1.214-.001.001 1.213a.996.996 0 01-.107.479.727.727 0 01-.302.302.995.995 0 01-.478.107h-.025a.995.995 0 01-.478-.107.727.727 0 01-.303-.302.996.996 0 01-.107-.479V8.4H7.092a.996.996 0 01-.478-.107.727.727 0 01-.303-.302.996.996 0 01-.107-.479v-.024c0-.191.037-.348.107-.479a.727.727 0 01.303-.302.996.996 0 01.478-.107l1.211-.001.001-1.211c0-.191.037-.348.107-.479a.727.727 0 01.303-.302.996.996 0 01.478-.107h.025zm9.06 4c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.727.727 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.726.726 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.038-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147zm-2-2c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.728.728 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.727.727 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.037-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147zm4 0c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.728.728 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.727.727 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.038-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147zm-2-2c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.728.728 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.727.727 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.038-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147z\" fill=\"url(#a)\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/gamepad-icon.svg":
+/*!****************************************!*\
+  !*** ./resources/svg/gamepad-icon.svg ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 27 18\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.705 0c6.372 0 9 4.965 9 11 0 4.481-1.26 7-4 7-1.14 0-1.896-.481-2.758-1.493l-.163-.196c-.092-.113-.452-.569-.542-.68l-.157-.189C18.207 14.411 17.477 14 16.205 14h-5c-1.272 0-2.001.41-2.88 1.442l-.156.189c-.09.111-.45.567-.543.68l-.162.196C6.602 17.519 5.846 18 4.705 18c-2.74 0-4-2.519-4-7 0-6.035 2.629-11 9-11h8zm0 2h-8c-4.922 0-7 3.924-7 9 0 3.519.741 5 2 5 .42 0 .731-.194 1.238-.792l.557-.693.293-.358C8.026 12.707 9.25 12 11.205 12h5c1.956 0 3.18.707 4.413 2.157l.176.212.674.839c.507.598.817.792 1.237.792 1.26 0 2-1.482 2-5 0-5.076-2.077-9-7-9zM9.218 4.5c.19 0 .348.037.478.107s.233.172.302.302c.07.13.107.288.107.479v1.211l1.213.001c.19 0 .348.037.478.107s.233.172.303.302c.07.13.106.288.106.479v.024a.996.996 0 01-.107.479.728.728 0 01-.302.302.997.997 0 01-.478.107l-1.214-.001.001 1.213a.996.996 0 01-.107.479.727.727 0 01-.302.302.995.995 0 01-.478.107h-.025a.995.995 0 01-.478-.107.727.727 0 01-.303-.302.996.996 0 01-.107-.479V8.4H7.092a.996.996 0 01-.478-.107.727.727 0 01-.303-.302.996.996 0 01-.107-.479v-.024c0-.191.037-.348.107-.479a.727.727 0 01.303-.302.996.996 0 01.478-.107l1.211-.001.001-1.211c0-.191.037-.348.107-.479a.727.727 0 01.303-.302.996.996 0 01.478-.107h.025zm9.06 4c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.727.727 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.726.726 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.038-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147zm-2-2c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.728.728 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.727.727 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.037-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147zm4 0c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.728.728 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.727.727 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.038-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147zm-2-2c.239 0 .388.037.518.107s.233.172.303.302c.07.13.106.28.106.517v.148c0 .237-.037.386-.106.517a.728.728 0 01-.303.302c-.13.07-.28.107-.517.107h-.147c-.238 0-.387-.037-.517-.107a.727.727 0 01-.303-.302c-.07-.13-.107-.28-.107-.517v-.148c0-.237.038-.386.107-.517a.727.727 0 01.303-.302c.13-.07.28-.107.517-.107h.147z\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/home-icon.svg":
+/*!*************************************!*\
+  !*** ./resources/svg/home-icon.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 23 28\" xmlns=\"http://www.w3.org/2000/svg\"><rect y=\"3.542\" width=\"12.146\" height=\"21.592\" rx=\"4\"/><rect x=\"8.737\" y=\".775\" width=\"14.146\" height=\"23.592\" rx=\"5\" transform=\"rotate(15 8.737 .775)\" stroke=\"#262A35\" stroke-width=\"2\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/like-icon.svg":
+/*!*************************************!*\
+  !*** ./resources/svg/like-icon.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 24 21\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.732.88A6.526 6.526 0 00.205 7.406c0 3.613 1.445 5.421 7.494 10.126l2.778 2.16a2 2 0 002.456 0l2.78-2.16c6.047-4.705 7.492-6.513 7.492-10.126A6.526 6.526 0 0016.68.88c-1.871 0-3.538.85-4.974 2.487C10.27 1.73 8.603.88 6.732.88zm0 2c1.519 0 2.888.858 4.15 2.683l.207.298a.75.75 0 001.233 0l.206-.298C13.79 3.738 15.16 2.88 16.679 2.88c2.5 0 4.526 2.027 4.526 4.526 0 2.78-1.137 4.204-6.72 8.547l-2.78 2.161-2.779-2.161c-5.583-4.343-6.72-5.766-6.72-8.547 0-2.5 2.026-4.526 4.526-4.526z\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/message-dispatch-icon.svg":
+/*!*************************************************!*\
+  !*** ./resources/svg/message-dispatch-icon.svg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 18 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1.944 13.534C1.29 15.286.879 16.516.71 17.226c-.527 2.227-.91 2.729 1.054 1.67 1.964-1.058 11.473-6.301 13.594-7.467 2.766-1.519 2.802-1.4-.148-3.013C12.963 7.188 3.566 2.082 1.765 1.08-.037.076.184.522.71 2.749c.17.719.587 1.96 1.25 3.725A3.771 3.771 0 004.78 8.85l5.514 1.058a.094.094 0 010 .184L4.769 11.15a3.771 3.771 0 00-2.825 2.385z\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/message-icon.svg":
+/*!****************************************!*\
+  !*** ./resources/svg/message-icon.svg ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 24 22\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M.242 10.499C.242 4.839 5.532.5 11.724.5c6.192 0 11.481 4.339 11.481 9.999s-5.289 9.999-11.481 9.999c-1.373 0-2.693-.21-3.918-.597C6.36 21.25 4.262 21.898 1.694 22 .647 22.04-.108 20.952.33 19.978c.622-1.391 1.425-2.987 1.52-4.378C.833 14.12.242 12.372.242 10.5zM11.724 2.5c-5.385 0-9.482 3.719-9.482 7.999 0 1.537.515 2.979 1.422 4.2a1 1 0 01.197.597c0 1.634-.651 3.175-1.314 4.638 2.056-.219 3.405-.877 4.218-1.834a1 1 0 011.114-.289c1.172.44 2.472.687 3.845.687 5.385 0 9.481-3.719 9.481-8 0-4.28-4.096-7.998-9.481-7.998z\"/></svg>");
+
+/***/ }),
+
+/***/ "./resources/svg/user-icon.svg":
+/*!*************************************!*\
+  !*** ./resources/svg/user-icon.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg viewBox=\"0 0 25 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.705 0c6.628 0 12 5.373 12 12s-5.372 12-12 12c-6.627 0-12-5.373-12-12s5.373-12 12-12zm0 18.5c-2.086 0-4.08.582-5.796 1.649A9.951 9.951 0 0012.705 22c2.16 0 4.161-.685 5.796-1.85a10.939 10.939 0 00-5.796-1.65zm0-16.5c-5.522 0-10 4.477-10 10a9.964 9.964 0 002.649 6.779 12.934 12.934 0 017.351-2.279c2.67 0 5.215.808 7.353 2.277A9.962 9.962 0 0022.705 12c0-5.523-4.477-10-10-10zm0 3.5a4.749 4.749 0 014.75 4.75 4.749 4.749 0 01-4.75 4.75 4.749 4.749 0 01-4.75-4.75 4.749 4.749 0 014.75-4.75zm0 2a2.749 2.749 0 100 5.5 2.749 2.749 0 100-5.5z\"/></svg>");
+
+/***/ }),
+
+/***/ "./node_modules/svg-vue/dist/svg-vue.esm.js":
+/*!**************************************************!*\
+  !*** ./node_modules/svg-vue/dist/svg-vue.esm.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+var e=function(e,t,n,i,o,s,r,a,l,d){"boolean"!=typeof r&&(l=a,a=r,r=!1);var c,u="function"==typeof n?n.options:n;if(e&&e.render&&(u.render=e.render,u.staticRenderFns=e.staticRenderFns,u._compiled=!0,o&&(u.functional=!0)),i&&(u._scopeId=i),s?(c=function(e){(e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext)||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),t&&t.call(this,l(e)),e&&e._registeredComponents&&e._registeredComponents.add(s)},u._ssrRegister=c):t&&(c=r?function(){t.call(this,d(this.$root.$options.shadowRoot))}:function(e){t.call(this,a(e))}),c)if(u.functional){var g=u.render;u.render=function(e,t){return c.call(t),g(e,t)}}else{var v=u.beforeCreate;u.beforeCreate=v?[].concat(v,c):[c]}return n}({render:function(){var e=this.$createElement;return(this._self._c||e)("svg",{attrs:{viewBox:this.svgViewBoxValues,xmlns:"http://www.w3.org/2000/svg"},domProps:{innerHTML:this._s(this.svgContent)}})},staticRenderFns:[]},void 0,{props:{icon:String},data:function(){return{svgString:__webpack_require__("./resources/svg sync recursive ^\\.\\/.*$")("./"+this.iconPath).default}},computed:{iconPath:{cache:!1,get:function(){return this.icon.replace(new RegExp(".".replace(/([.*+?^=!:${}()|\[\]\/\\])/g,"\\$1"),"g"),"/")+".svg"}},svgViewBoxValues:function(){return this.svgString?(/viewBox="([^"]+)"/.exec(this.svgString)||"")[1]:null},svgContent:function(){return this.svgString?this.svgString.replace(/^<svg[^>]*>|<\/svg>$/g,""):null}}},void 0,!1,void 0,void 0,void 0);function t(n){t.installed||(t.installed=!0,n.component("SvgVue",e))}var n={install:t},i=null;"undefined"!=typeof window?i=window.Vue:"undefined"!=typeof __webpack_require__.g&&(i=__webpack_require__.g.Vue),i&&i.use(n),e.install=t;/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (e);
 
 
 /***/ }),
@@ -32815,13 +32969,13 @@ Vue.compile = compileToFunctions;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./Welcome": [
-		"./resources/js/Pages/Welcome.vue",
-		"resources_js_Pages_Welcome_vue"
+	"./Index": [
+		"./resources/js/Pages/Index.vue",
+		"resources_js_Pages_Index_vue"
 	],
-	"./Welcome.vue": [
-		"./resources/js/Pages/Welcome.vue",
-		"resources_js_Pages_Welcome_vue"
+	"./Index.vue": [
+		"./resources/js/Pages/Index.vue",
+		"resources_js_Pages_Index_vue"
 	]
 };
 function webpackAsyncContext(req) {
@@ -32841,6 +32995,46 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = () => Object.keys(map);
 webpackAsyncContext.id = "./resources/js/Pages lazy recursive ^\\.\\/.*$";
 module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ "./resources/svg sync recursive ^\\.\\/.*$":
+/*!**************************************!*\
+  !*** ./resources/svg/ sync ^\.\/.*$ ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./bell-icon.svg": "./resources/svg/bell-icon.svg",
+	"./close-icon.svg": "./resources/svg/close-icon.svg",
+	"./gamepad-icon-gradient.svg": "./resources/svg/gamepad-icon-gradient.svg",
+	"./gamepad-icon.svg": "./resources/svg/gamepad-icon.svg",
+	"./home-icon.svg": "./resources/svg/home-icon.svg",
+	"./like-icon.svg": "./resources/svg/like-icon.svg",
+	"./message-dispatch-icon.svg": "./resources/svg/message-dispatch-icon.svg",
+	"./message-icon.svg": "./resources/svg/message-icon.svg",
+	"./user-icon.svg": "./resources/svg/user-icon.svg"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/svg sync recursive ^\\.\\/.*$";
 
 /***/ })
 
@@ -32879,6 +33073,18 @@ module.exports = webpackAsyncContext;
 /******/ 	// It's empty as some runtime module handles the default behavior
 /******/ 	__webpack_require__.x = x => {}
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => module['default'] :
+/******/ 				() => module;
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -32909,7 +33115,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "resources_js_Pages_Welcome_vue") return "js/" + chunkId + ".js";
+/******/ 			if (chunkId === "resources_js_Pages_Index_vue") return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
@@ -33025,7 +33231,7 @@ module.exports = webpackAsyncContext;
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./resources/js/app.js"],
-/******/ 			["./resources/css/app.css"]
+/******/ 			["./resources/sass/app.scss"]
 /******/ 		];
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
 /******/ 				// JSONP chunk loading for javascript
@@ -33036,7 +33242,7 @@ module.exports = webpackAsyncContext;
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if("resources_js_Pages_Welcome_vue" == chunkId) {
+/******/ 						if("resources_js_Pages_Index_vue" == chunkId) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => {
 /******/ 								installedChunkData = installedChunks[chunkId] = [resolve, reject];

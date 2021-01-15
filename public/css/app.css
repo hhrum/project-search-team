@@ -1,1 +1,22 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: #141523;
+}
 
+.content {
+  margin: 24px 24px;
+}
+
+.icon {
+  fill: #fff;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.icon--purple {
+  fill: #7B61FF;
+}
+.icon--red {
+  fill: #E64646;
+}
