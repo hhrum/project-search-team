@@ -31,7 +31,7 @@
 </template>
 
 <script>
-    import NavCard from "../Components/NavCard";
+    import NavCard from "./NavCard";
 
     export default {
         name: "Nav",

@@ -30,9 +30,9 @@
 
 <script>
     import NotificationWantToPlay from "./NotificationWantToPlay";
-    import GameCards from "./GameCards";
-    import Title from "./text/Title";
-    import GameCardSmall from "./GameCardSmall";
+    import GameCards from "../gamecards/GameCards";
+    import Title from "../text/Title";
+    import GameCardSmall from "../gamecards/GameCardSmall";
 
     export default {
         name: "NotificationsWantToPlay",

@@ -34,8 +34,8 @@
 <script>
     import TextMedium from "./text/TextMedium";
     import TextShallow from "./text/TextShallow";
-    import GameCards from "./GameCards";
-    import GameCard from "./GameCard";
+    import GameCards from "./gamecards/GameCards";
+    import GameCard from "./gamecards/GameCard";
 
     export default {
         name: "UserCard",

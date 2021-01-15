@@ -14,7 +14,7 @@
 </template>
 
 <script>
-    import TextMedium from "./text/TextMedium";
+    import TextMedium from "../text/TextMedium";
 
     export default {
         name: "NavCard",
@@ -76,7 +76,7 @@
         }
 
         &--profile {
-            background: rgba(255, 255, 255, .7);
+            background: rgba(255, 255, 255, .65);
             //backdrop-filter: blur(10px);
             box-shadow: 0 0 24px 0 #6A55D6;
 

@@ -16,8 +16,8 @@
 </template>
 
 <script>
-    import Title from "./text/Title";
-    import ChatItem from "./chat/ChatItem";
+    import Title from "../text/Title";
+    import ChatItem from "../chat/ChatItem";
 
     export default {
         name: "NotificationsChats",

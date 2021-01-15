@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    import TextShallow from "./text/TextShallow";
+    import TextShallow from "../text/TextShallow";
 
     export default {
         name: "NotificationWantToPlay",

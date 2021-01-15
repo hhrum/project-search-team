@@ -15,8 +15,8 @@
 <script>
     import TextSmall from "../Components/text/TextShallow";
     import UserCard from "../Components/UserCard";
-    import Nav from "../Components/Nav";
-    import Notifications from "../Components/Notifications";
+    import Nav from "../Components/nav/Nav";
+    import Notifications from "../Components/notifications/Notifications";
 
     export default {
         name: "index",
