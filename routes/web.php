@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -13,7 +14,13 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//
 
-Route::get('/', function () {
+//Route::get('/', function (Request $request) {
+//    dd($request->all());
+//    return Inertia::render('Welcome');
+//});
+
+Route::middleware('auth')->get('/', function (Request $request) {
     return Inertia::render('Welcome');
 });
