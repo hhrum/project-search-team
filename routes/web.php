@@ -17,3 +17,6 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Index');
 });
+Route::get('/chats', function () {
+    return Inertia::render('Chats');
+});

@@ -33,7 +33,7 @@
     .chat {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         padding: 16px;
 
         background: rgba(38, 42, 53, 1);

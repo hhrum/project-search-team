@@ -24,7 +24,7 @@
             </div>
             <div class="status__item">
                 <div class="icon"><svg-vue icon="message-icon"></svg-vue></div>
-                <div>3</div>
+                <span>3</span>
             </div>
 
         </div>
@@ -83,13 +83,15 @@
         &__item {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             margin-right: 12px;
             width: 40px;
-            height: 28px;
+            height: auto;
 
             .icon {
-                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 57%;
             }
 
             &:last-child {

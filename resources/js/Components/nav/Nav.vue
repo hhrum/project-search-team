@@ -14,12 +14,15 @@
             </template>
         </nav-card>
 
-        <nav-card>
-            <template v-slot:status>3</template>
-            <template v-slot:icon>
-                <div class="icon icon--purple"><svg-vue icon="message-icon"></svg-vue></div>
-            </template>
-        </nav-card>
+        <inertia-link href="/chats" method="get">
+            <nav-card>
+                <template v-slot:status>3</template>
+                <template v-slot:icon>
+                    <div class="icon icon--purple"><svg-vue icon="message-icon"></svg-vue></div>
+                </template>
+            </nav-card>
+        </inertia-link>
+
 
         <nav-card>
             <template v-slot:status>3</template>

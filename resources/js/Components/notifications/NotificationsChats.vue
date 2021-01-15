@@ -1,6 +1,6 @@
 <template>
   <div class="chats">
-      <Title>Чаты</Title>
+      <text-title>Чаты</text-title>
 
       <div class="chats-items">
           <chat-item :is-new-message="true">
@@ -16,13 +16,13 @@
 </template>
 
 <script>
-    import Title from "../text/Title";
+    import TextTitle from "../text/TextTitle";
     import ChatItem from "../chat/ChatItem";
 
     export default {
         name: "NotificationsChats",
         components: {
-            Title, ChatItem,
+            TextTitle, ChatItem,
         }
     }
 </script>

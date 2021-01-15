@@ -1,6 +1,6 @@
 <template>
     <div class="want-to-play">
-        <Title>С вами хотят поиграть</Title>
+        <text-title>С вами хотят поиграть</text-title>
 
         <div class="want-to-play-items">
             <notification-want-to-play>
@@ -31,13 +31,13 @@
 <script>
     import NotificationWantToPlay from "./NotificationWantToPlay";
     import GameCards from "../gamecards/GameCards";
-    import Title from "../text/Title";
+    import TextTitle from "../text/TextTitle";
     import GameCardSmall from "../gamecards/GameCardSmall";
 
     export default {
         name: "NotificationsWantToPlay",
         components: {
-            NotificationWantToPlay, GameCards, GameCardSmall, Title,
+            NotificationWantToPlay, GameCards, GameCardSmall, TextTitle,
         }
     }
 </script>

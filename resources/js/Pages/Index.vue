@@ -9,6 +9,7 @@
         <Nav />
 
         <notifications />
+
     </div>
 </template>
 
