@@ -42,7 +42,7 @@
     /* ================================== */
 
     header {
-        margin: 0 0 50px;
+        margin: 0 0 $main-p;
 
         font-family: "Roboto", sans-serif;
         font-size: 20px;

@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/chats', function () {
     return Inertia::render('Chats');
 });
+Route::get('/chat', function () {
+    return Inertia::render('Chat');
+});

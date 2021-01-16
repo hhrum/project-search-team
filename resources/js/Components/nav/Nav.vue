@@ -23,7 +23,6 @@
             </nav-card>
         </inertia-link>
 
-
         <nav-card>
             <template v-slot:status>3</template>
             <template v-slot:icon>

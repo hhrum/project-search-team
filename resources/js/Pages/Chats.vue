@@ -6,7 +6,10 @@
       </header>
 
       <div class="chats__items">
-          <chat-item :is-new-message="true" />
+          <inertia-link href="/chat" method="get">
+              <chat-item :is-new-message="true" />
+          </inertia-link>
+
           <chat-item />
           <chat-item :is-new-message="true" />
           <chat-item />

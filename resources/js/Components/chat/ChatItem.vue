@@ -1,6 +1,6 @@
 <template>
     <div :class="getRootClasses">
-        <div class="chat__avatar"></div>
+        <avatar-square48 />
 
         <div class="chat__text">
             <div class="chat__name">
@@ -16,7 +16,13 @@
 </template>
 
 <script>
+    import AvatarSquare48 from "../avatar/AvatarSquare48";
+
     export default {
+        name: 'chatItem',
+        components: {
+            AvatarSquare48,
+        },
         props: ['isNewMessage'],
         computed: {
             getRootClasses: function () {
@@ -39,16 +45,8 @@
         background: rgba(38, 42, 53, 1);
         border-radius: 16px;
 
-        &__avatar {
-            width: 48px;
-            height: 48px;
-            margin-right: 12px;
-
-            background: #c4c4c4;
-            border-radius: 20px;
-        }
-
         &__text {
+            margin-left: 12px;
             white-space: nowrap;
             overflow: hidden;
         }

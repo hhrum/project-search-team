@@ -13,6 +13,7 @@
                     </game-cards>
                 </template>
             </notification-want-to-play>
+
             <notification-want-to-play>
                 <template v-slot:name>Кирилл Нубик</template>
                 <template v-slot:status>Люблю яблоки</template>

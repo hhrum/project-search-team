@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="profile-info">
-            <div class="profile-info__avatar"></div>
+            <avatar-circle48 />
             <div class="profile-info__text">
                 <TextMedium>Просто Артём</TextMedium>
                 <TextShallow>Съел собаку</TextShallow>
@@ -36,11 +36,13 @@
     import TextShallow from "./text/TextShallow";
     import GameCards from "./gamecards/GameCards";
     import GameCard from "./gamecards/GameCard";
+    import AvatarCircle48 from "./avatar/AvatarCircle48";
 
     export default {
         name: "UserCard",
 
         components: {
+            AvatarCircle48,
             TextMedium, TextShallow, GameCards, GameCard,
         }
     }
@@ -61,19 +63,9 @@
         align-items: center;
         margin-bottom: 16px;
 
-        &__avatar {
-            width: 48px;
-            height: 48px;
-
-            background: #c4c4c4;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
-            border-radius: 100%;
-        }
-
         &__text {
             margin-left: 10px;
         }
-
     }
 
     .status {
