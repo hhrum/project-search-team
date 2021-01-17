@@ -1,5 +1,5 @@
 <template>
-    <div class="wrap">
+    <div class="wrap" @click="back">
         <div class="back-arr"><span></span></div>
     </div>
 
@@ -7,7 +7,10 @@
 
 <script>
     export default {
-        name: 'backArr'
+        name: 'backArr',
+        methods: {
+            back () {window.history.back()}
+        }
     }
 </script>
 

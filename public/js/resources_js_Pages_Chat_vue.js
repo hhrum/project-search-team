@@ -19,7 +19,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'backArr'
+  name: 'backArr',
+  methods: {
+    back: function back() {
+      window.history.back();
+    }
+  }
 });
 
 /***/ }),
@@ -1249,16 +1254,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "wrap", on: { click: _vm.back } }, [
+    _vm._m(0)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "wrap" }, [
-      _c("div", { staticClass: "back-arr" }, [_c("span")])
-    ])
+    return _c("div", { staticClass: "back-arr" }, [_c("span")])
   }
 ]
 render._withStripped = true
