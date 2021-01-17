@@ -1,32 +1,39 @@
 <template>
-    <div class="dialogs">
-        <Header>
-            <template v-slot:left>
-                <back-arr />
-            </template>
+    <div class="chat">
+        <div class="chat-head">
+            <back-arr />
 
-            <template v-slot:right>
-                <div class="header__content">
-                    <div class="header__text">
-                        <div class="header__title">Диалоги</div>
-                        <div class="header__subtitle">Диалоги</div>
-                    </div>
-                    <AvatarCircle36 />
+            <div class="chat-head__content">
+                <div class="chat-head__text">
+                    <div class="chat-head__title">Диалоги</div>
+                    <text-small>Диалоги</text-small>
                 </div>
-            </template>
-        </Header>
+                <avatar-circle36 />
+            </div>
+        </div>
 
         <div class="content-chat">
             <div class="message__body">
                 <message :is-message-from-them="true" />
                 <message />
+                <message />
+                <message />
+                <message />
+                <message :is-message-from-them="true" />
+                <message :is-message-from-them="true" />
+                <message :is-message-from-them="true" />
+                <message />
+                <message />
+                <message :is-message-from-them="true" />
+                <message :is-message-from-them="true" />
+                <message :is-message-from-them="true" />
 
             </div>
 
             <div class="message__input-form">
                 <input class="message__input" type="text" placeholder="Введите текст">
                 <button class="message__btn">
-                    <message-dispatch-icon class="icon" />
+                    <div class="icon"><svg-vue icon="message-dispatch-icon"></svg-vue></div>
                 </button>
             </div>
 
@@ -36,31 +43,39 @@
 </template>
 
 <script>
-    import Header from "../Components/Header";
     import BackArr from "../Components/BackArr";
     import AvatarCircle36 from "../Components/avatar/AvatarCircle36";
     import Message from "../Components/Message";
+    import TextSmall from "../Components/text/TextSmall";
 
     export default {
         name: "Chat",
-        components: {Header, Message, AvatarCircle36, BackArr}
+        components: {
+            TextSmall, Message, AvatarCircle36, BackArr
+        }
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .content-chat {
+        max-width: 100%;
         position: fixed;
         top: 75px;
+        right: 0;
+        left: 0;
         bottom: 0;
-
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        overflow-y: auto;
         margin: 0 24px;
+
     }
 
-    .message-header {
+    .chat-head {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 24px 0;
+
         &__content {
             display: flex;
         }
@@ -76,27 +91,25 @@
             font-size: 14px;
             font-weight: 400;
         }
-
-        &__subtitle {
-            font-size: 12px;
-            font-weight: 300;
-            opacity: .5;
-        }
     }
 
     .message {
         &__body {
             overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 0;
+            }
         }
 
         &__input-form {
             display: flex;
             justify-content: space-between;
+            width: 100%;
             margin: 24px 0;
         }
 
         &__input {
-            width: 100%;
+            width: 90%;
             max-height: 40px;
             padding: 13.5px 16px;
             margin-right: 10px;
@@ -104,7 +117,7 @@
             font-size: 13px;
             font-weight: 300;
 
-            background: #141523;
+            background: #282B3E;
             border-radius: 16px;
         }
 
@@ -115,11 +128,10 @@
             min-width: 40px;
             min-height: 40px;
 
-            background-color: #282B3E;
+            background: #282B3E;
             border-radius: 16px;
 
             .icon {
-                fill: #fff;
                 width: 18px;
                 height: 20px;
 

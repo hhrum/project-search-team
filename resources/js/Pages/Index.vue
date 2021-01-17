@@ -28,21 +28,9 @@
     }
 </script>
 
-<style lang="scss">
-    // Обнуление
-    *{padding:0;margin:0;border:0;}
-    *,*:before,*:after{box-sizing:border-box;}
-    :focus,:active{outline:none;}
-    a:focus,a:active{outline:none;}
-    input,button,textarea{font-family:inherit;font-size:inherit;font-weight:inherit;color:inherit;border:0;}
-    button{cursor:pointer;}
-    a,a:visited{color:inherit;text-decoration:none;font-family:inherit;font-size:inherit;}
-    a:hover{text-decoration:none;}
-    img{vertical-align:top;}
-    /* ================================== */
-
+<style lang="scss" scoped>
     header {
-        margin: 0 0 $main-p;
+        margin: 0 0 24px;
 
         font-family: "Roboto", sans-serif;
         font-size: 20px;
