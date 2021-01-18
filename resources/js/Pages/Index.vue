@@ -1,72 +1,70 @@
 <template id="index">
     <div class="content">
+
         <header>Хочу в тиму</header>
 
         <div class="welcome-text">Привет, просто!</div>
 
-        <user-card />
+        <v-user-card />
 
-        <Nav />
+        <v-nav />
 
         <div class="notifications">
-            <notification-section>
+            <v-notification-section>
                 <template v-slot:title>С вами хотят поиграть</template>
                 <template v-slot:items>
-                    <notification-want-to-play>
+                    <v-notification-want-to-play>
                         <template v-slot:name>Кирилл Нубик</template>
                         <template v-slot:status>Люблю яблоки</template>
                         <template v-slot:games>
-                            <game-cards>
-                                <game-card-small>Minecraft</game-card-small>
-                                <game-card-small>WoT: Blitz</game-card-small>
-                            </game-cards>
+                            <v-game-cards>
+                                <v-game-card><template v-slot:smallsize>Minecraft</template></v-game-card>
+                                <v-game-card><template v-slot:smallsize>WoT: Blitz</template></v-game-card>
+                            </v-game-cards>
                         </template>
-                    </notification-want-to-play>
-                    <notification-want-to-play>
-                        <template v-slot:name>Кирилл Нубик</template>
-                        <template v-slot:status>Люблю яблоки</template>
-                        <template v-slot:games>
-                            <game-cards>
-                                <game-card-small>Minecraft</game-card-small>
-                                <game-card-small>WoT: Blitz</game-card-small>
-                            </game-cards>
-                        </template>
-                    </notification-want-to-play>
-                </template>
-            </notification-section>
+                    </v-notification-want-to-play>
 
-            <notification-section>
+                    <v-notification-want-to-play>
+                        <template v-slot:name>Кирилл Нубик</template>
+                        <template v-slot:status>Люблю яблоки</template>
+                        <template v-slot:games>
+                            <v-game-cards>
+                                <v-game-card><template v-slot:smallsize>Minecraft</template></v-game-card>
+                                <v-game-card><template v-slot:smallsize>WoT: Blitz</template></v-game-card>
+                            </v-game-cards>
+                        </template>
+                    </v-notification-want-to-play>
+                </template>
+            </v-notification-section>
+
+            <v-notification-section>
                 <template v-slot:title>Чаты</template>
                 <template v-slot:items>
-                    <chat-item is-new-message="true" />
-                    <chat-item />
+                    <v-chat-item is-new-message="true" />
+                    <v-chat-item />
                 </template>
-            </notification-section>
+            </v-notification-section>
         </div>
 
     </div>
 </template>
 
 <script>
-    import TextSmall from "../Components/text/TextShallow";
-    import UserCard from "../Components/UserCard";
-    import Nav from "../Components/nav/Nav";
-    import NotificationSection from "../Components/notifications/NotificationSection";
-    import NotificationWantToPlay from "../Components/notifications/NotificationWantToPlay";
-    import GameCards from "../Components/gamecards/GameCards";
-    import GameCardSmall from "../Components/gamecards/GameCardSmall";
-    import ChatItem from "../Components/chat/ChatItem";
+    import vTextSmall from "../Components/text/vTextShallow";
+    import vUserCard from "../Components/vUserCard";
+    import vNav from "../Components/nav/vNav";
+    import vNotificationSection from "../Components/notifications/vNotificationSection";
+    import vNotificationWantToPlay from "../Components/notifications/vNotificationWantToPlay";
+    import vGameCards from "../Components/gamecards/vGameCards";
+    import vGameCard from "../Components/gamecards/vGameCard";
+    import vChatItem from "../Components/chat/vChatItem";
 
     export default {
         name: "index",
-
         components: {
-            ChatItem,
-            GameCardSmall,
-            GameCards,
-            NotificationWantToPlay,
-            NotificationSection,
-            TextSmall, UserCard, Nav,
+            vChatItem, vGameCards, vGameCard,
+            vNotificationSection, vNotificationWantToPlay,
+            vTextSmall, vUserCard, vNav,
         }
     }
 </script>

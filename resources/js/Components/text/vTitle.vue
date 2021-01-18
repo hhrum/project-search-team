@@ -1,15 +1,15 @@
 <template>
-  <div class="text"><slot></slot></div>
+  <div class="title"><slot></slot></div>
 </template>
 
 <script>
     export default {
-        name: "textBig",
+        name: "vTitle",
     }
 </script>
 
 <style lang="scss" scoped>
-  .text {
+  .title {
     font-size: 18px;
   }
 </style>

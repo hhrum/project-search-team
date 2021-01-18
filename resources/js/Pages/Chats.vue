@@ -1,5 +1,6 @@
 <template>
   <div class="chats">
+
       <header class="header">
           <div class="header__title">Диалоги</div>
           <div class="header__avatar"></div>
@@ -7,30 +8,28 @@
 
       <div class="chats__items">
           <inertia-link href="/chat" method="get">
-              <chat-item :is-new-message="true" />
+              <v-chat-item :is-new-message="true" />
           </inertia-link>
 
-          <chat-item />
-          <chat-item :is-new-message="true" />
-          <chat-item />
-          <chat-item />
-          <chat-item />
-          <chat-item />
-
+          <v-chat-item />
+          <v-chat-item :is-new-message="true" />
+          <v-chat-item />
+          <v-chat-item />
+          <v-chat-item />
+          <v-chat-item />
 
       </div>
-
 
   </div>
 </template>
 
 <script>
-    import ChatItem from "../Components/chat/ChatItem";
+    import vChatItem from "../Components/chat/vChatItem";
 
     export default {
         name: "Chats",
         components: {
-            ChatItem,
+            vChatItem,
         }
     }
 </script>

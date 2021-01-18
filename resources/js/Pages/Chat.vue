@@ -1,33 +1,33 @@
 <template>
     <div class="chat">
+
         <div class="chat-head">
-            <back-arr />
+            <v-back-arr />
 
             <div class="chat-head__content">
                 <div class="chat-head__text">
                     <div class="chat-head__title">Диалоги</div>
-                    <text-small>Диалоги</text-small>
+                    <v-text-small>Диалоги</v-text-small>
                 </div>
-                <avatar-circle36 />
+                <v-avatar-circle36 />
             </div>
         </div>
 
         <div class="content-chat">
             <div class="message__body">
-                <message :is-message-from-them="true" />
-                <message />
-                <message />
-                <message />
-                <message />
-                <message :is-message-from-them="true" />
-                <message :is-message-from-them="true" />
-                <message :is-message-from-them="true" />
-                <message />
-                <message />
-                <message :is-message-from-them="true" />
-                <message :is-message-from-them="true" />
-                <message :is-message-from-them="true" />
-
+                <v-message :is-message-from-them="true" />
+                <v-message />
+                <v-message />
+                <v-message />
+                <v-message />
+                <v-message :is-message-from-them="true" />
+                <v-message :is-message-from-them="true" />
+                <v-message :is-message-from-them="true" />
+                <v-message />
+                <v-message />
+                <v-message :is-message-from-them="true" />
+                <v-message :is-message-from-them="true" />
+                <v-message :is-message-from-them="true" />
             </div>
 
             <div class="message__input-form">
@@ -36,22 +36,22 @@
                     <div class="icon"><svg-vue icon="message-dispatch-icon"></svg-vue></div>
                 </button>
             </div>
-
         </div>
 
     </div>
 </template>
 
 <script>
-    import BackArr from "../Components/BackArr";
-    import AvatarCircle36 from "../Components/avatar/AvatarCircle36";
-    import Message from "../Components/Message";
-    import TextSmall from "../Components/text/TextSmall";
+    import vBackArr from "../Components/vBackArr";
+    import vAvatarCircle36 from "../Components/avatar/vAvatarCircle36";
+    import vMessage from "../Components/vMessage";
+    import vTextSmall from "../Components/text/vTextSmall";
 
     export default {
         name: "Chat",
         components: {
-            TextSmall, Message, AvatarCircle36, BackArr
+            vTextSmall, vMessage,
+            vAvatarCircle36, vBackArr
         }
     }
 </script>

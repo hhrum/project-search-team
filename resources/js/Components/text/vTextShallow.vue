@@ -4,12 +4,14 @@
 
 <script>
     export default {
-        name: "textMedium",
+        name: "vTextShallow",
     }
 </script>
 
 <style lang="scss" scoped>
   .text {
-    font-size: 14px;
+    font-size: 10px;
+    font-weight: 300;
+    opacity: .5;
   }
 </style>

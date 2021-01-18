@@ -1,23 +1,26 @@
 <template>
     <div class="game-card">
-        <text-shallow><slot>Game</slot></text-shallow>
+        <text-small><slot name="normalsize"></slot></text-small>
+        <text-shallow><slot name="smallsize"></slot></text-shallow>
     </div>
 </template>
 
 <script>
-    import TextShallow from "../text/TextShallow";
+    import TextSmall from "../text/vTextSmall";
+    import TextShallow from "../text/vTextShallow";
 
     export default {
-        name: "GameCardSmall",
+        name: "vGameCard",
         components: {
-            TextShallow
+            TextShallow,
+            TextSmall
         }
     }
 </script>
 
 <style lang="scss" scoped>
     .game-card {
-        padding: 6px;
+        padding: 8px;
         margin-right: 8px;
 
         background: #141523;

@@ -1,6 +1,6 @@
 <template>
     <div class="notification">
-        <text-title><slot name="title"></slot></text-title>
+        <v-title><slot name="title"></slot></v-title>
 
         <div class="notification__body">
             <slot name="items"></slot>
@@ -9,11 +9,13 @@
 </template>
 
 <script>
-    import TextTitle from "../text/TextTitle";
+    import vTitle from "../text/vTitle";
 
     export default {
-        name: "NotificationSection",
-        components: {TextTitle}
+        name: "vNotificationSection",
+        components: {
+            vTitle,
+        }
     }
 </script>
 

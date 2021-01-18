@@ -1,17 +1,17 @@
 <template>
     <div class="wrapper">
         <div class="profile-info">
-            <avatar-circle48 />
+            <v-avatar-circle48 />
             <div class="profile-info__text">
-                <TextMedium>Просто Артём</TextMedium>
-                <TextShallow>Съел собаку</TextShallow>
+                <v-text-medium>Просто Артём</v-text-medium>
+                <v-text-shallow>Съел собаку</v-text-shallow>
             </div>
         </div>
 
-        <game-cards>
-            <game-card>Terraria</game-card>
-            <game-card>Minecraft</game-card>
-        </game-cards>
+        <v-game-cards>
+            <v-game-card><template v-slot:normalsize>Terraria</template></v-game-card>
+            <v-game-card><template v-slot:normalsize>Minecraft</template></v-game-card>
+        </v-game-cards>
 
         <div class="status">
             <div class="status__item">
@@ -32,18 +32,18 @@
 </template>
 
 <script>
-    import TextMedium from "./text/TextMedium";
-    import TextShallow from "./text/TextShallow";
-    import GameCards from "./gamecards/GameCards";
-    import GameCard from "./gamecards/GameCard";
-    import AvatarCircle48 from "./avatar/AvatarCircle48";
+    import vAvatarCircle48 from "./avatar/vAvatarCircle48";
+    import vTextMedium from "./text/vTextMedium";
+    import vTextShallow from "./text/vTextShallow";
+    import vGameCards from "./gamecards/vGameCards";
+    import vGameCard from "./gamecards/vGameCard";
 
     export default {
-        name: "UserCard",
-
+        name: "vUserCard",
         components: {
-            AvatarCircle48,
-            TextMedium, TextShallow, GameCards, GameCard,
+            vAvatarCircle48,
+            vTextMedium, vTextShallow,
+            vGameCards, vGameCard,
         }
     }
 </script>

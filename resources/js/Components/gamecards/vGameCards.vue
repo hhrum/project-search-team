@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        name: "GameCards"
+        name: "vGameCards"
     }
 </script>
 

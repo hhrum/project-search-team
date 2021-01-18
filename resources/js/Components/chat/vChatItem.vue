@@ -1,6 +1,6 @@
 <template>
     <div :class="getRootClasses">
-        <avatar-square48 />
+        <v-avatar-square48 />
 
         <div class="chat__text">
             <div class="chat__name">
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-    import AvatarSquare48 from "../avatar/AvatarSquare48";
+    import vAvatarSquare48 from "../avatar/vAvatarSquare48";
 
     export default {
-        name: 'chatItem',
+        name: 'vChatItem',
         components: {
-            AvatarSquare48,
+            vAvatarSquare48,
         },
         props: ['isNewMessage'],
         computed: {

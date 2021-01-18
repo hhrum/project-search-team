@@ -7,19 +7,19 @@
             <slot name="icon"></slot>
         </div>
         <div class="nav-card__text">
-            <text-medium><slot name="text">Отметок</slot></text-medium>
+            <v-text-medium><slot name="text">Отметок</slot></v-text-medium>
         </div>
-        <div class="nav-card__btn nav-card__btn--profile"><text-medium>Открыть</text-medium></div>
+        <div class="nav-card__btn nav-card__btn--profile"><v-text-medium>Открыть</v-text-medium></div>
     </div>
 </template>
 
 <script>
-    import TextMedium from "../text/TextMedium";
+    import vTextMedium from "../text/vTextMedium";
 
     export default {
-        name: "NavCard",
+        name: "vNavCard",
         components: {
-            TextMedium,
+            vTextMedium,
         },
         props: ['isProfile'],
         computed: {

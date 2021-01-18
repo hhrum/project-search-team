@@ -1,15 +1,15 @@
 <template>
-  <div class="title"><slot></slot></div>
+  <div class="text"><slot></slot></div>
 </template>
 
 <script>
     export default {
-        name: "textTitle",
+        name: "vTextMedium",
     }
 </script>
 
 <style lang="scss" scoped>
-  .title {
-    font-size: 18px;
+  .text {
+    font-size: 14px;
   }
 </style>

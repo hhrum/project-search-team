@@ -4,7 +4,7 @@
 
       <div class="want-to-play-item__info">
           <div class="want-to-play-item__name"><slot name="name">Пользователь</slot></div>
-          <div class="want-to-play-item__status"><text-shallow><slot name="status">Статус пользователя</slot></text-shallow></div>
+          <div class="want-to-play-item__status"><v-text-shallow><slot name="status">Статус пользователя</slot></v-text-shallow></div>
           <div class="want-to-play-item__games">
               <slot name="games"></slot>
           </div>
@@ -13,12 +13,12 @@
 </template>
 
 <script>
-    import TextShallow from "../text/TextShallow";
+    import vTextShallow from "../text/vTextShallow";
 
     export default {
-        name: "NotificationWantToPlay",
+        name: "vNotificationWantToPlay",
         components: {
-            TextShallow,
+            vTextShallow,
         }
     }
 </script>

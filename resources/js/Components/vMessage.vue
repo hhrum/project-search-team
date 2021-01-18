@@ -7,7 +7,7 @@
 
 <script>
     export default {
-        name: "Message",
+        name: "vMessage",
         props: ['isMessageFromThem'],
         computed: {
             getRootClasses: function () {
@@ -28,6 +28,7 @@
 
             font-size: 13px;
             font-weight: 400;
+            word-break: break-all;
 
             background: #282B3E;
             border-radius: 16px;

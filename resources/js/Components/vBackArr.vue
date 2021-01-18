@@ -2,12 +2,11 @@
     <div class="wrap" @click="back">
         <div class="back-arr"><span></span></div>
     </div>
-
 </template>
 
 <script>
     export default {
-        name: 'backArr',
+        name: 'vBackArr',
         methods: {
             back () {window.history.back()}
         }
@@ -37,12 +36,10 @@
 
             background: #fff;
         }
-
         & span:before {
             transform: rotate(-45deg);
             transform-origin: left bottom;
         }
-
         & span:after {
             transform: rotate(45deg);
             transform-origin: left top;
