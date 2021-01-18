@@ -1,5 +1,5 @@
 <template>
-    <div class="game-card">
+    <div :class="getRootClasses">
         <text-small><slot name="normalsize"></slot></text-small>
         <text-shallow><slot name="smallsize"></slot></text-shallow>
     </div>
@@ -14,6 +14,15 @@
         components: {
             TextShallow,
             TextSmall
+        },
+        props: ['isSmall'],
+        computed: {
+            getRootClasses: function () {
+                let classes = ['game-card'];
+                if (this.isSmall) classes.push('game-card--small');
+
+                return classes.join(' ');
+            }
         }
     }
 </script>
@@ -25,6 +34,10 @@
 
         background: #141523;
         border-radius: 8px;
+
+        &--small {
+            padding: 6px;
+        }
 
         &:last-child {
             margin-right: 0;

@@ -18,8 +18,8 @@
                         <template v-slot:status>Люблю яблоки</template>
                         <template v-slot:games>
                             <v-game-cards>
-                                <v-game-card><template v-slot:smallsize>Minecraft</template></v-game-card>
-                                <v-game-card><template v-slot:smallsize>WoT: Blitz</template></v-game-card>
+                                <v-game-card :is-small="true"><template v-slot:smallsize>Minecraft</template></v-game-card>
+                                <v-game-card :is-small="true"><template v-slot:smallsize>WoT: Blitz</template></v-game-card>
                             </v-game-cards>
                         </template>
                     </v-notification-want-to-play>
@@ -29,8 +29,8 @@
                         <template v-slot:status>Люблю яблоки</template>
                         <template v-slot:games>
                             <v-game-cards>
-                                <v-game-card><template v-slot:smallsize>Minecraft</template></v-game-card>
-                                <v-game-card><template v-slot:smallsize>WoT: Blitz</template></v-game-card>
+                                <v-game-card :is-small="true"><template v-slot:smallsize>Minecraft</template></v-game-card>
+                                <v-game-card :is-small="true"><template v-slot:smallsize>WoT: Blitz</template></v-game-card>
                             </v-game-cards>
                         </template>
                     </v-notification-want-to-play>

@@ -116,6 +116,14 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     TextShallow: _text_vTextShallow__WEBPACK_IMPORTED_MODULE_1__.default,
     TextSmall: _text_vTextSmall__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  props: ['isSmall'],
+  computed: {
+    getRootClasses: function getRootClasses() {
+      var classes = ['game-card'];
+      if (this.isSmall) classes.push('game-card--small');
+      return classes.join(' ');
+    }
   }
 });
 
@@ -647,7 +655,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".game-card[data-v-7043a3ff] {\n  padding: 8px;\n  margin-right: 8px;\n  background: #141523;\n  border-radius: 8px;\n}\n.game-card[data-v-7043a3ff]:last-child {\n  margin-right: 0;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".game-card[data-v-7043a3ff] {\n  padding: 8px;\n  margin-right: 8px;\n  background: #141523;\n  border-radius: 8px;\n}\n.game-card--small[data-v-7043a3ff] {\n  padding: 6px;\n}\n.game-card[data-v-7043a3ff]:last-child {\n  margin-right: 0;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3146,7 +3154,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "game-card" },
+    { class: _vm.getRootClasses },
     [
       _c("text-small", [_vm._t("normalsize")], 2),
       _vm._v(" "),
@@ -3746,6 +3754,7 @@ var render = function() {
                                 "v-game-cards",
                                 [
                                   _c("v-game-card", {
+                                    attrs: { "is-small": true },
                                     scopedSlots: _vm._u([
                                       {
                                         key: "smallsize",
@@ -3758,6 +3767,7 @@ var render = function() {
                                   }),
                                   _vm._v(" "),
                                   _c("v-game-card", {
+                                    attrs: { "is-small": true },
                                     scopedSlots: _vm._u([
                                       {
                                         key: "smallsize",
@@ -3802,6 +3812,7 @@ var render = function() {
                                 "v-game-cards",
                                 [
                                   _c("v-game-card", {
+                                    attrs: { "is-small": true },
                                     scopedSlots: _vm._u([
                                       {
                                         key: "smallsize",
@@ -3814,6 +3825,7 @@ var render = function() {
                                   }),
                                   _vm._v(" "),
                                   _c("v-game-card", {
+                                    attrs: { "is-small": true },
                                     scopedSlots: _vm._u([
                                       {
                                         key: "smallsize",

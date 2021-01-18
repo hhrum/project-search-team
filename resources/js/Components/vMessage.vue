@@ -23,12 +23,12 @@
 <style lang="scss">
     .message {
         &__content {
-            max-width: 60%;
+            max-width: 55%;
             padding: 8px 16px;
 
             font-size: 13px;
             font-weight: 400;
-            word-break: break-all;
+            word-wrap: break-word;
 
             background: #282B3E;
             border-radius: 16px;
